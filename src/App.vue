@@ -2,9 +2,6 @@
    <div class="safe-area">
      <router-view v-if="isShowRouter"></router-view>
    </div>
-   <div class="center-button">
-     <Button v-if="!isShowRouter && isShowButton" type="primary" @click="doLogin">点我自动登陆</Button>
-   </div>
    <TabbarPage v-if="isShowTabbar"/>
 </template>
 
@@ -24,7 +21,7 @@ export default {
   },
   setup(){
     const { isShowTabbar, onGetMoneyConfig } = useGlobalHooks();
-    const isShowRouter = ref<boolean>(false);
+    const isShowRouter = ref<boolean>(true);
     const isShowButton = ref<boolean>(false);
     const doLogin = async () => {
       /** 获取钱包地址登录 */
@@ -46,7 +43,7 @@ export default {
       }
     }
     onMounted(async () => {
-        doLogin()
+        // doLogin()
     })
     return {isShowTabbar, isShowRouter, isShowButton, doLogin}
   }
