@@ -1,4 +1,4 @@
-# hqmc_app
+# vue3-template
 
 ## Project setup
 ```
