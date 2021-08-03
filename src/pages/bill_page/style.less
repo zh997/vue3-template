@@ -1,0 +1,88 @@
+@import url('@/styles/theme_vars.less');
+
+.full-extraction-page{
+    padding: 20px;
+    .assets-head{
+        height: 230px;
+        background-image: url(../../assets/assets_info_header@2x.png);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        &-label{
+            font-size: 24px;
+        }
+        &-value{
+            font-size: 32px;
+            margin-top: 20px;
+        }
+    }
+    .assets-btn-group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 36px 0;
+        .assets-btn-item{
+            height: 52px;
+            border-radius: 10px;
+            background-color: @primary-color;
+            color: #fff;
+            font-weight: bold;
+            font-size: 32px;
+            // width: 48%;
+            margin-right: 20px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .assets-btn-item:last-child{
+            margin: 0;
+        }
+    }
+
+    .charge-code-panel{
+        padding: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        .share-code{
+            width: 303px;
+            height: 303px;
+            margin-top: 73px;
+            margin-bottom: 60px;
+            > canvas{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .team-link-group{
+        margin: 20px;
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        > span{
+            font-size: 24px;
+            color: @color-282828;
+            width:600px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-right: 20px;
+        }
+        > img {
+            width: 32px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import url('@/styles/theme_vars.less');
+
+.publish-order-page{
+    margin: 20px;
+    .publish-order-tab{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        .publish-order-tabitem{
+            flex: 1;
+            height: 97px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #282828;
+        }
+        .tabitem-active{
+            color: #1678FF;
+        }
+    }
+    .publish-order-form{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px 35px;
+        margin-bottom: 50px;
+        .publish-order-formitem{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            &-label,&-sufix{
+                font-size: 24px;
+                color: #282828;
+            }
+            &-sufix{
+                width: 100px;
+                text-align: right;
+            }
+            &-value{
+                font-size: 24px;
+                color: #282828;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex: 1;
+                > input {
+                    font-size: 24px;
+                    color: #282828;
+                    border: none;
+                    height: 60px;
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import url('@/styles/theme_vars.less');
+
+
+.transform_confirm-page{
+    padding: 20px;
+    .withdraw-code-panel{
+        padding: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        .withdraw-select{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            &-label{
+                font-size: 24px;
+                color: @color-282828;
+                font-weight: bold;
+                margin-right: 20px;
+                min-width: 220px;
+            }
+            &-value{
+                border: 2px solid @color-282828;
+                border-radius: 10px;
+                flex: 1;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 48px;
+                padding: 0 20px;
+                box-sizing: border-box;
+                > img {
+                    width: 19px;
+                }
+            }
+            .border-clean{
+                border: none;
+                padding: 0;
+                > span{ 
+                    flex: 1;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+        }
+        .blance-text-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .blance-text{
+            font-size: 18px;
+            color: @primary-color;
+            text-align: right;
+            height: 50px;
+            line-height: 50px;
+        }
+        .withdraw-btn{
+            width: 418px;
+            height: 52px;
+            background-color: @primary-color;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            margin: 100px auto 20px auto;
+        }
+    }
+    
+}

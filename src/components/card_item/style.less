@@ -1,0 +1,60 @@
+@import url('@/styles/theme_vars.less');
+
+.card-item{
+    margin: 0 25px 25px 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    &-head{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .head-stage{
+            display: inline-block;
+            background-color: @primary-color;
+            padding: 5px 10px;
+            color: #fff;
+            font-size: 18px;
+        }
+        .head-text{
+            margin-left: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            &-active{
+                font-size: 32px;
+                color: @primary-color;
+            }
+        }
+    }
+    &-row{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 31px 0;
+        &-text{
+            width: 50%;
+            color: @color-282828;
+            font-size: 24px;
+            > span{
+                color: @color-808080;
+            }
+        }
+        &-btn{
+            width: 153px;
+            height: 52px;
+            font-size: 32px;
+            color: #fff;
+            border-radius: 10px;
+            background-color: @primary-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .flex-space-between{
+        justify-content: space-between;
+    }
+    .disabeld-btn{
+        background-color: @color-808080;
+    }
+}
